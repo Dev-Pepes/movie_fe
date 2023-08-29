@@ -1,26 +1,42 @@
 {
   "name": "movie_fe",
+  "description": "10duck 서브컬쳐 정보를 가져갈 수 있는 FrontEnd 프로젝트",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.1",
+    "eslint-config-prettier": "^9.0.0",
+    "node-sass": "^7.0.3",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "env-cmd -f env/.env.local react-scripts start",
+    "build": "env-cmd -f env/.env.local react-scripts build",
+    "dev-start": "env-cmd -f env/.env.development react-scripts start",
+    "dev-build": "env-cmd -f env/.env.development react-scripts build",
+    "prod-start": "env-cmd -f env/.env.production react-scripts start",
+    "prod-build": "env-cmd -f env/.env.production react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "airbnb",
+      "prettier"
     ]
   },
   "browserslist": {
@@ -34,5 +50,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
