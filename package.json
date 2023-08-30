@@ -1,5 +1,5 @@
 {
-  "name": "movie_fe",
+  "name": "playlist_fe",
   "description": "10duck 서브컬쳐 정보를 가져갈 수 있는 FrontEnd 프로젝트",
   "version": "0.1.0",
   "private": true,
