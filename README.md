@@ -67,14 +67,14 @@
 ## 프로젝트 구조
 
 .
-├── [D] env
-├── [D] public
-├── [D] src
-├── [D] .git
-├── .eslintrc.js
-├── .gitignore
-├── .prettierrc
-├── README.md
-├── package-lock.json
-├── package.json
+├── [D] env  
+├── [D] public  
+├── [D] src  
+├── [D] .git  
+├── .eslintrc.js  
+├── .gitignore  
+├── .prettierrc  
+├── README.md  
+├── package-lock.json  
+├── package.json  
 └── README.md
